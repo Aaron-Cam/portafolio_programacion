@@ -2,16 +2,9 @@ import { Link } from "react-router-dom"
 import Input from "../Components/Input"
 import useDarkMode from "../Logic/Darkmode"
 
-/*
-import "../css/app.css"
-import "../css/light.css"
-import "../css/dark.css"
-*/
-
 import "../css/estilos-globales.css"
 import "../css/estilos-especificos.css"
 import "../css/responsive.css"
-
 
 const Login = () => {
 
