@@ -197,7 +197,7 @@ const Singup = () => {
                     <img className="google-icon" src="../src/assets/Google-Icon.png"/>
                     <span className="ghost-texts">Sing In with Google</span>
                 </button>
-                <span className="ghost-texts">Already have an acount? <Link to="/" className="links">Sing in</Link></span>
+                <span className="ghost-texts margin-bot">Already have an acount? <Link to="/" className="links">Sing in</Link></span>
             </div>
         </div>
     )
