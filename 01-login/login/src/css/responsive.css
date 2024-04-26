@@ -1,5 +1,7 @@
 /* --- Responsive --- */
 
+/* Falta el responsive para pantallas de computadora chicas */
+
 /* --- tablets ---*/
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
@@ -35,11 +37,6 @@
 
     /* Sing up */
 
-    .d-l-btn{
-        position: absolute;
-        transform: translate(200%, -15%);
-    }
-
     .card-singup{
         flex-direction: column;
         border-radius: 30px;
@@ -47,21 +44,29 @@
         padding: 2rem 4rem;
         position: relative;
         display: flex;
-        height: auto;
+        height: 100%;
         width: auto;
         margin: auto;
     }
 
-    .card-singup .form .margin-bot{
-        margin: 0.5rem;
-    }
-    
     .card-singup .margin-top{
-        margin: 0.5rem;
+        margin-top: 0.5rem;
     }
 
-    .card-singup .margin-bot{
-        margin: 0.5rem;
+    #singup.light-background{
+        background-color: var(--color-background-light);
+    }
+    
+    #singup.dark-background{
+        background-color: var(--color-background-dark);
+    }
+    
+    .card-singup.shadow-light{
+        box-shadow: none;
+    }
+    
+    .card-singup.shadow-dark{
+        box-shadow: none;
     }
 
     /* terms and privacy */

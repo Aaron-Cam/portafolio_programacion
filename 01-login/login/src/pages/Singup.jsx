@@ -70,11 +70,11 @@ const Singup = () => {
     }
 
     return(
-        <div className={`contenedor-vh , flex-col ${dark ? "dark-background" : "light-background"}`}>
+        <div id="singup" className={`contenedor-vh , flex-col ${dark ? "dark-background" : "light-background"}`}>
             <div className={`card-singup ${dark ? "dark , shadow-dark" : "light , shadow-light"}`}>
             {/* Botón oscuro / claro */}
                 <div className="d-l-btn">
-                    <button className={`margin ${dark ? "btn-ld-dark" : "btn-ld-light"}`} onClick={darkmode}>
+                    <button className={`margin-top ${dark ? "btn-ld-dark" : "btn-ld-light"}`} onClick={darkmode}>
                         <svg
                             width="24"
                             height="24"
