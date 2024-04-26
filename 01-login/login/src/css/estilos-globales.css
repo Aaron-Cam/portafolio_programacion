@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --color:  rgb(90,137,205);
+    --color2: rgb(66, 99, 144);
+    --color-background-light: rgb(234,234,234);
+    --color-background-light-2: rgb(244,244,244);
+    --color-background-dark: rgb(45,45,45);
+    --color-background-dark-2: rgb(65,65,65);;
+    --titles: 'Bebas Neue', sans-serif;
+    --texts: 'Noto Sans', sans-serif;
+    --shadow: rgb(108, 108, 108);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* light - dark */
+
+.light{
+    background-color: var(--color-background-light);
+}
+
+.light-background{
+    background-color: var(--color-background-light-2);
+}
+
+.dark{
+    background-color: var(--color-background-dark);
+}
+
+.dark-background{
+    background-color: var(--color-background-dark-2);
+}
+
+.shadow-light{
+    box-shadow: 8px 8px 8px var(--shadow);
+}
+
+.shadow-dark{
+    box-shadow: 8px 8px 8px black;
+}
+
+/* Contenedor / Container */
+
+.contenedor{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-vh{
+    width: 100%;
+    height: 100vh;
+}
+
+/* Textos / Texts */
+
+.title{
+    font-family: var(--titles);
+    color: var(--color);
+    font-size: 4rem;
+}
+
+.subtitle{
+    font-family: var(--texts);
+    color: var(--color);
+    font-size: 1.5rem;
+}
+
+.texts{
+    font-family: var(--texts);
+    color: var(--color);
+    font-size: larger;
+}
+
+.ghost-texts{
+    font-family: var(--texts);
+    font-size: large;
+    color: gray;
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+.size-m{
+    font-size:medium;
+}
+
+/* Márgenes / Margin */
+
+.margin{
+    margin: 2rem;
+}
+
+.margin-top{
+    margin-top: 2rem;
+}
+
+.margin-bot{
+    margin-bottom: 2rem;
+}
+
+.margin-left{
+    margin-left: 2rem;
+}
+
+.margin-right{
+    margin-right: 2rem;
+}
+
+.margin-t-b{
+    margin: 2rem 0;
+}
+
+.margin-l-r{
+    margin: 0 2rem;
+}
+
+/* Posiciones / Poition */
+
+.flex-col{
+    flex-direction: column;
+    display: flex;
+}
+
+.flex-row{
+    flex-direction: row;
+    display: flex;
+}
+
+.aling-self-center{
+    align-self: center;
+}
+
+.aling-self-flex-end{
+    align-self: flex-end;
+}
+
+.aling-items-center{
+    align-items: center;
+}
+
+.center{
+    text-align: center;
+}
+
+/* Botones / Buttons */
+
+.button-primary{
+    background-color: var(--color);
+    font-family: var(--texts);
+    border-radius: 30px;
+    align-self: center;
+    font-size: x-large;
+    font-weight: 800;
+    margin-top: 2rem;
+    color: white;
+    width: 28rem;
+    height: 4rem;
+    border: none;
+}
+
+.button-primary:hover{
+    background-color: var(--color2);
+    cursor: pointer;
+}
+
+.button-primary.disable{
+    background-color: var(--color2);
+}
+
+.button-primary.disable:hover{
+    cursor: no-drop;
+}
+
+.button-secondary{
+    background-color: var(--color);
+    font-family: var(--texts);
+    border-radius: 10px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    font-weight: 800;
+    color: white;
+    border: none;
+    height: 2rem;
+    width: 10rem;
+}
+
+.button-secondary:hover{
+    background-color: var(--color2);
+    cursor: pointer;
+}
+
+.btn-google{
+    box-shadow: 0 1px 3px var(--shadow);
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: 2rem;
+    display: flex;
+    width: 14rem;
+    height: 3.5rem;
+    border: none;
+}
+
+.btn-google:hover{
+    background-color: var(--color-background-light);
+    cursor: pointer;
+}
+
+.google-icon{
+    height: 3rem;
+}
+
+/* Input */
+
+.form{
+    flex-direction: column;
+    align-self: center;
+    display: flex;
+    width: 28rem;
+}
+
+.label{
+    font-family: var(--texts);
+    color: var(--color);
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.input{
+    border-color: var(--color);
+    font-family: var(--texts);
+    color: var(--color);
+    margin-top: 0.5rem;
+    font-size: medium;
+    outline: none;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    height: 2rem;
+}
+
+::placeholder{
+    font-size: medium;
+}
+
+/* colors */
+
+.blue{
+    color: var(--color);
+}
+
+.gray{
+    color: gray;
+}
+
+/* Decoraciones-Detalles / Decorations-Details */
+
+.border{
+    height: 2px;
+    background-color: var(--color);
+    border: none;
+}
+
+.border-s{
+    height: 2px;
+    background-color: var(--color);
+    border: none;
+    width: 8rem;
+}
+
+.links{
+    border-color: var(--color);
+    border-width: 0 2px 2px 0;
+    font-family: var(--texts);
+    text-decoration: none;
+    color: var(--color);
+    border-style: solid;
+    font-weight: 800;
+    padding: 3px 5px;
+}
+
+.links:hover{
+    color: var(--color2);
+}
+
+.lists{
+    list-style: none;
+}

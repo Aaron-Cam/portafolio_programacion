@@ -1,0 +1,172 @@
+/* botón light - dark / button light - dark */
+
+.btn-ld-light{
+    box-shadow: 0 2px 2px var(--shadow);
+    border: 1px solid var(--shadow);
+    border-radius: 50%;
+    height: 2.5rem;
+    color: gray;
+    width: 2.5rem;
+
+    &:hover{
+        box-shadow: inset 0 2px 2px var(--shadow);
+        color: var(--color);
+        cursor: pointer;
+    }
+}
+
+.btn-ld-dark{
+    background-color: var(--background-color-dark);
+    box-shadow: inset 0 2px 2px black;
+    border: 1px solid black;
+    color: var(--color);
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+/* Ingresar / login */
+
+.card-container-login{
+    margin: auto;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.icon{
+    transform: translate(125%, -50%);
+    border: 2px solid var(--color);
+    border-radius: 50%;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+}
+
+.card-img{
+    background-image: url("../assets/Banner.jpg");
+    border-radius: 30px 0 0 30px;
+    justify-content: center;
+    background-size: cover;
+    position: relative;
+    height: 40rem;
+    width: 35rem;
+
+    & h1{
+        text-shadow: 3px 3px 3px black;
+        font-family: var(--titles);
+        font-size: 4rem;
+        color: white;
+    }
+
+    & h4{
+        text-shadow:  3px 3px 3px black;
+        transform: translate(0, 580%);
+        font-family: var(--texts);
+        position: absolute;
+        text-align: center;
+        font-size: large;
+        font-weight: 100;
+        color: white;
+        width: 12rem;
+    }
+}
+
+.card-login{
+    border-radius: 0 30px 30px 0;
+    position: relative;
+    height: 40rem;
+    width: 35rem;
+}
+
+.forgot{
+    font-family: var(--texts);
+    text-decoration: none;
+    color: var(--color);
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-align: end;
+    width: 28rem;
+
+    &:hover{
+        color: var(--color2);
+    }
+}
+
+/* Registrarse / sing up */
+
+.card-singup{
+    flex-direction: column;
+    border-radius: 30px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 65rem;
+    width: 40rem;
+    margin: auto;
+}
+
+.btn-show{
+    transform: translate(1300%, 870%);
+    border-radius: 10px;
+    position: absolute;
+    height: 2rem;
+    border: none;
+    width: 2rem;
+
+    &:hover{
+        cursor: pointer;
+        background-color: var(--color);
+    }
+
+    & div{
+        color: var(--color);
+        padding: 4px 0px;
+        height: 100%;
+        width: 100%;
+
+        &:hover{
+            color: white;
+        }
+    }
+}
+
+.eye-alt{
+    position: absolute;
+    transform: translate(-100%);
+}
+
+.hide{
+    opacity: 0;
+}
+
+/* Recuperar contraseña / recover password */
+
+.width-RecoPass{
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+    width: 35rem;
+}
+
+/* Términos y privacidad / Terms and privacy */
+
+.width-terms-privacy{
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+    width: 100vh;
+}
+
+/* 404 */
+
+.width-404{
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+    width: 90vh;
+}
