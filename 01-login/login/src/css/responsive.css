@@ -16,23 +16,45 @@
     /* Login */
 
     .icon{
-        transform: translate(135%, -50%);
-        border: 2px solid var(--color);
-        border-radius: 50%;
-        position: absolute;
-        height: 150px;
-        width: 150px;
+        display: none;
     }
 
     .card-img{
         display: none;
     }
 
+    .card-login .aling-self-flex-end{
+        align-self: center;
+
+    }
+
+    .margin-top.margin-right{
+        margin: 0;
+    }
+
+
     .card-login{
         border-radius: 30px;
         position: relative;
         height: 40rem;
         width: 35rem;
+    }
+
+    
+    #login.dark-background{
+        background-color: var(--color-background-dark);
+    }
+
+    #login.light-background{
+        background-color: var(--color-background-light);
+    }
+
+    .card-container-login.shadow-light{
+        box-shadow: none;
+    }
+    
+    .card-container-login.shadow-dark{
+        box-shadow: none;
     }
 
     /* Sing up */
@@ -123,6 +145,19 @@
 
     /* log in */
 
+    .icon{
+        display: none;
+    }
+
+    .card-login .aling-self-flex-end{
+        align-self: center;
+
+    }
+
+    .margin-top.margin-right{
+        margin: 0;
+    }
+
     .card-img{
         display: none;
     }
@@ -132,6 +167,26 @@
         position: relative;
         height: 100%;
         width: 100%;
+    }
+
+    .forgot{
+        width: 85%;
+    }
+
+    #login.dark-background{
+        background-color: var(--color-background-dark);
+    }
+
+    #login.light-background{
+        background-color: var(--color-background-light);
+    }
+
+    .card-container-login.shadow-light{
+        box-shadow: none;
+    }
+    
+    .card-container-login.shadow-dark{
+        box-shadow: none;
     }
 
     /* sing up */

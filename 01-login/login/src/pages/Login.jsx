@@ -11,7 +11,7 @@ const Login = () => {
     const [dark, darkmode] = useDarkMode();
 
     return(
-        <div className={`contenedor-vh flex-col ${dark ? "dark-background" : "light-background"}`}>
+        <div id="login" className={`contenedor-vh flex-col ${dark ? "dark-background" : "light-background"}`}>
             <div className={`card-container-login flex-row , ${dark ? 'shadow-dark' : 'shadow-light'}`}>
                 <div className="card-img , flex-col , aling-items-center">
                     <h1>Blue Studios</h1>
