@@ -110,26 +110,28 @@
     margin: auto;
 }
 
-.btn-show{
-    transform: translate(1300%, 870%);
+.btn-show {
+    left: 84%;
+    top: 47%;
+    transform: translate(-84%, -47%);
     border-radius: 10px;
     position: absolute;
     height: 2rem;
     border: none;
     width: 2rem;
 
-    &:hover{
+    &:hover {
         cursor: pointer;
         background-color: var(--color);
     }
 
-    & div{
+    & div {
         color: var(--color);
         padding: 4px 0px;
         height: 100%;
         width: 100%;
 
-        &:hover{
+        &:hover {
             color: white;
         }
     }
